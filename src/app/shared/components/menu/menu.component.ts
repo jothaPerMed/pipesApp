@@ -7,19 +7,44 @@ import { MenuItem, PrimeIcons } from 'primeng/api';
   styles: [
   ]
 })
-export class MenuComponent implements OnInit{
-  public items: MenuItem[] | undefined;
+export class MenuComponent implements OnInit {
+  public menuItems: MenuItem[] | undefined;
 
   ngOnInit() {
-      this.items = [
+    this.menuItems = [
+      {
+        label: 'Pipes de Angular',
+        icon: PrimeIcons.DESKTOP,
+        items: [
           {
-              label: 'New',
-              icon: PrimeIcons.PLUS,
+            label: 'Textos y Fechas',
+            icon: PrimeIcons.ALIGN_LEFT
           },
           {
-              label: 'Delete',
-              icon: PrimeIcons.TRASH
+            label: 'Números',
+            icon: PrimeIcons.DOLLAR
+          },
+          {
+            label: 'No comunes',
+            icon: PrimeIcons.GLOBE
           }
-      ];
+        ]
+      },
+      {
+      label: 'Pipes Personalizados',
+      icon: PrimeIcons.COG,
+      items:[
+        {
+          label: 'Otro elemento',
+          icon: PrimeIcons.COG
+        },
+        {
+          label: 'Otro elemento',
+          icon: PrimeIcons.COG
+        }
+      ]
+    }
+
+    ];
   }
 }
