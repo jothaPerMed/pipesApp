@@ -1,3 +1,4 @@
+import { CanFlyPipe } from './pipes/canfly-case.pipe';
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 
@@ -8,6 +9,8 @@ import { UncommonPageComponent } from './pages/uncommon-page/uncommon-page.compo
 import { PrimeNgModule } from '../prime-ng/prime-ng.module';
 import { OrderComponent } from './pages/order/order.component';
 import { ToogleCasePipe } from './pipes/toogle-case.pipe';
+import { CanFlyPipe as fly } from './pipes/canfly-case.pipe';
+import { ShortByPipe } from './pipes/short-by.pipe';
 
 
 @NgModule({
@@ -17,7 +20,9 @@ import { ToogleCasePipe } from './pipes/toogle-case.pipe';
     UncommonPageComponent,
     OrderComponent,
     //Pipes
-    ToogleCasePipe
+    ToogleCasePipe,
+    fly,
+    ShortByPipe
   ],
   imports: [
     CommonModule,
