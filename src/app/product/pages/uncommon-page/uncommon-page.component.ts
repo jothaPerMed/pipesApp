@@ -44,4 +44,13 @@ public clientsMap ={
   }
 
 
+  // KeyValuePipe
+
+  public person={
+    name:'Fernando',
+    age:36,
+    address:'Ottawa Canada'
+  }
+
+
 }
