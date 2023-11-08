@@ -23,6 +23,7 @@ import { ToogleCasePipe } from './pipes/toogle-case.pipe';
     CommonModule,
     ProductRoutingModule,
     PrimeNgModule
+
   ]
 })
 export class ProductModule { }

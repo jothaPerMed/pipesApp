@@ -5,9 +5,11 @@ import { MenuComponent } from './components/menu/menu.component';
 
 
 
+
 @NgModule({
   declarations: [
     MenuComponent,
+
 
   ],
   imports: [

@@ -5,7 +5,8 @@ import { Pipe, PipeTransform } from '@angular/core';
 })
 
 export class ToogleCasePipe implements PipeTransform {
-  transform(value: string, ...args: any[]): string {
-    return value.toUpperCase();
+  transform(value: string, isCapitalize:boolean): string {
+
+    return isCapitalize?value.toUpperCase():value;
   }
 }

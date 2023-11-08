@@ -1,7 +1,7 @@
 <p-panel header="PipesBasicos" class="p-2">
   <h1>Pipes Personalizados</h1>
   <p>
-    Pipes personalizados por {{'nosotros'| toogleCase}}
+    Pipes personalizados por {{'nosotros'| toogleCase:isUpperCase}}
   </p>
 </p-panel>
 
@@ -9,3 +9,14 @@
   <div class="col md:col-6">
   </div>
 </div>
+
+
+<p-toolbar>
+
+  <div class="p-toolbar-group-end">
+      <p-button label="ToogleCase" icon="pi pi-search" class="mr-2" (click)="toogleUpperCase()"></p-button>
+      <p-button label="Por nombre" icon="pi pi-calendar" styleClass="p-button-success mr-2"></p-button>
+      <p-button label="Por volar" icon="pi pi-times" styleClass="p-button-danger mr-2"></p-button>
+      <p-button label="Por color" icon="pi pi-search" styleClass="p-button-help mr-2"></p-button>
+  </div>
+</p-toolbar>
