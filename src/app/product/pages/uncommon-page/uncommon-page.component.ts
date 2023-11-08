@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { interval, tap } from 'rxjs';
 
 @Component({
   selector: 'app-uncommon-page',
@@ -52,5 +53,19 @@ public clientsMap ={
     address:'Ottawa Canada'
   }
 
+
+  // Async Pipe
+
+
+  public myObservable = interval(2000).pipe(
+    tap(value=> console.log('tap:',value))
+  )
+
+
+  public promiseValue: Promise<string> = new Promise((resolve, reject)=>{
+    setTimeout(()=>{
+      resolve('tenemos otra promesa.')
+    },3000)
+  })
 
 }
