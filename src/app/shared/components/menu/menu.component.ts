@@ -1,5 +1,8 @@
 import { Component, OnInit } from '@angular/core';
 import { MenuItem, PrimeIcons } from 'primeng/api';
+import { BasicPageComponent } from 'src/app/product/pages/basic-page/basic-page.component';
+import { NumberPageComponent } from 'src/app/product/pages/number-page/number-page.component';
+import { UncommonPageComponent } from 'src/app/product/pages/uncommon-page/uncommon-page.component';
 
 @Component({
   selector: 'shared-menu',
@@ -18,15 +21,18 @@ export class MenuComponent implements OnInit {
         items: [
           {
             label: 'Textos y Fechas',
-            icon: PrimeIcons.ALIGN_LEFT
+            icon: PrimeIcons.ALIGN_LEFT,
+            routerLink: '/'
           },
           {
             label: 'Números',
-            icon: PrimeIcons.DOLLAR
+            icon: PrimeIcons.DOLLAR,
+            routerLink: 'numbers'
           },
           {
             label: 'No comunes',
-            icon: PrimeIcons.GLOBE
+            icon: PrimeIcons.GLOBE,
+            routerLink:'uncommon'
           }
         ]
       },
